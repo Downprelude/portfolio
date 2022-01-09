@@ -41,24 +41,22 @@ html {
 }
 
 /* TEMAOVERBLIK KNAP */
+
 .knap {
-  display: grid;
-  grid-template-columns: 1fr 0.2fr 1fr;
-  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }
 
 .knap a {
-  grid-column: 2;
-  text-align: center;
-  font-size: 1.3em;
   background-color: #7a9d97;
-  padding: 5px 5px;
-  text-decoration: none;
-  color: #e2e9b0;
-  margin-top: 10px;
+  font-size: 1em;
+  color: #e6efa1;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s;
+  padding: 0.3%;
+  text-decoration: none;
 }
 
 .knap a:hover {
@@ -84,13 +82,13 @@ html {
   padding: 2%;
 }
 
-/* OM MIG TEKST */
+/* OM MIG TEKST */ /* OM MIG BILLEDE */
 
 .tekst {
   padding: 0 10%;
+  font-size: 90%;
 }
 
-/* OM MIG BILLEDE */
 .billede3 {
   margin-top: 10%;
   display: grid;
@@ -107,37 +105,83 @@ html {
 
 /* Section 3  TEMAER*/
 
-#section3 {
-  font-size: 110%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  margin-top: 10%;
-  padding: 0 10%;
-  gap: 5% 5%;
-  margin-bottom: 40%;
+.section3 {
+display: grid;
+grid-row: 1fr 1fr 1fr 1fr;
+gap: 5%;
+padding: 5%;
+margin-bottom: 30%;
 }
 
 .tema {
-  background-color: #7a9d97;
-  text-decoration: none;
-  padding: 5% 5%;
+text-decoration: none;
+font-size: 80%;
+background-color: #7a9d97;
 }
 
 .tema p {
-  color: black;
+color: black;
+padding: 5%;
 }
 
 .tema h1 {
+  font-size: 120%;
   color: #e6efa1;
+}
+
+.tema h1, 
+.tema p {
+  padding: 3%;
 }
 
 .tema:hover {
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
-}
+} 
 
 /* burgermenu  LILLE MENU*/
+
+@media (min-width: 700px) {
+  .splash {
+    padding: 0% 5%;
+  }
+
+  .hej {
+    width: 80%;
+  }
+
+  .portfolio {
+    width: 80%;
+    margin-left: 40%;
+  }
+
+  /* OM MIG  */
+  .ommig {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tekst {
+    padding: 0 10%;
+    font-size: 90%;
+  }
+
+  .billede3 {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+  }
+
+
+/* TEMAOVERBLIK  */
+
+.section3 {
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ margin-bottom: 10%;
+}
+}
 
 @media (min-width: 900px) {
   /* SPLASH */
@@ -145,41 +189,73 @@ html {
     padding: 0% 5%;
   }
 
+  .hej {
+    width: 80%;
+  }
+
+  .portfolio {
+    width: 100%;
+    margin-left: 10%;
+  }
+
   /* OM MIG TEKST  */
   .tekst {
-    padding: 0 20%;
-    font-size: 120%;
+    padding: 0 10%;
     margin-top: 10%;
   }
+ 
+
+
+
 }
 
 @media (min-width: 1000px) {
-  /*   SECTION 3 
- */
-  #section3 {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 5% 5%;
-    margin-bottom: 5%;
-  }
-}
+  /*   SECTION 3 */
+
 
 @media (min-width: 1200px) {
   /*   SLASH */
   .splash {
     padding: 0% 20%;
   }
-
-  /* KNAP */
-  .knap {
-    margin-bottom: 2%;
+  .hej {
+    grid-column: 4/7;
+    width: 100%;
+  }
+  .portfolio {
+    margin-left: 0;
   }
 
   /*   OM MIG */
   .ommig {
+    padding: 0 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .tekst h1 {
+    margin-top: 5%;
+  }
+
+  .billede3 {
+    width: 69%;
+    margin-left: 10%;
+  }
+
+/* TEMAOVERBLIK */
+.section3 {
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+}
+
+.tema {
+  padding: 5%;
+}
+
+
+
 }
 
 @media (min-width: 1900px) {

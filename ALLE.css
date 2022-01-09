@@ -56,7 +56,7 @@ body {
     opacity: 30%;
   }
 
-  a {
+  nav a {
     display: flex;
     height: 100%;
     width: 62%;
@@ -107,24 +107,26 @@ body {
   }
 }
 
+header {
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0));
+}
+
 @media (min-width: 600px) {
   /*Desktop nav*/
   header {
-    margin-top: 2%;
-    padding: 0 2%;
-    background: transparent;
+    padding: 17px 3%;
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 0, 0));
     display: grid;
     grid-template-columns: 0.8fr 5fr;
   }
 
   header nav ul {
     grid-row: 3;
-    transition: 0.3s;
   }
 
   li {
     display: inline;
-    padding: 5px;
+    padding: 20px;
   }
 
   a {
@@ -173,12 +175,16 @@ footer {
 
 .footerindhold {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-right: 30%;
 }
 
+.footerindhold p {
+  padding: 5%;
+}
 .medier {
   display: flex;
   font-size: 60px;
@@ -198,6 +204,10 @@ ul {
 
 .fa-facebook,
 .fa-instagram {
-  color: #7a9d97;
+  color: #aadbd3;
   text-decoration: none;
+}
+
+.andreas {
+  padding: 1% 2%;
 }

@@ -58,7 +58,7 @@ img {
 /* SECTION 4 - VIDEO SAMT REFLEKSION */
 
 .section4 {
-  padding: 0 5%;
+  padding: 5%;
 }
 
 video {
@@ -211,6 +211,11 @@ video {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
+    padding: 5% 5%;
+  }
+
+  .section4 {
+    padding: 5%;
   }
 
   video {
