@@ -13,26 +13,58 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
+    <header>
+      <a href="index.html"
+        ><img id="andreas_logo" src="billeder/logo.svg" alt="logo"
+      /></a>
+      <button class="toggle-btn">
+        <img class="icon close" href="#close" src="billeder/kryds.svg" />
+        <img class="icon burger" href="#menu" src="billeder/burgermenu.svg" />
+      </button>
+
+      <nav id="nav_burgermenu">
+        <ul>
+          <li><a href="web.html">WEB</a></li>
+          <li><a href="UX.html">UX</a></li>
+          <li><a href="Ani.html">Animation</a></li>
+          <li><a href="indhold.html">Indhold</a></li>
+        </ul>
+      </nav>
+
+      <nav id="nav_desktop" class="hidden">
+        <ul>
+          <li><a href="web.html">WEB</a></li>
+          <li><a href="UX.html">UX</a></li>
+          <li><a href="Ani.html">Animation</a></li>
+          <li><a href="indhold.html">Indhold</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="splash">
       <div class="portfolio">
         <img src="billeder/splash.svg" alt="portfolio" />
       </div>
+
       <div class="hej">
         <img src="billeder/billede2.svg" alt="" />
       </div>
     </div>
 
-    <!--    KNAP -->
     <div class="knap">
-      <a href="index.html#section3">temaoverblik</a>
+      <a href="index.html#temaoverblik">temaoverblik</a>
     </div>
 
     <div class="ommig">
       <div class="tekst">
-        <h1>om andreas</h1>
+        <h1>Om Andreas</h1>
         <p>
           Den grafiske afdeling tænder mig. Jeg elsker æstetik og er vild med få
           klare visuelle elementer. Et moderene og til tider stringent univers,
@@ -52,61 +84,61 @@
       </div>
     </div>
 
-    <div id="section3">
-      <a class="tema" href="web.html">
-        <h1>Grundlæggende Web <br />Tema 1</h1>
-        <p>
-          Moodboard, Splashbillede, Photoshop, XD, Styletile, Mobile first og
-          web, HTML, CSS, Layoutdiagram, Grid, Layout, Flex, Responsiv,
-          Studiestartsprøve
-        </p>
-      </a>
+    <div id="temaoverblik">
+      <div class="section3">
+        <a class="tema" href="web.html">
+          <h1>Grundlæggende Web <br />Tema 1</h1>
+          <p>
+            Moodboard, Splashbillede, Photoshop, XD, Styletile, Mobile first og
+            web, HTML, CSS, Layoutdiagram, Grid, Layout, Flex, Responsiv,
+            Studiestartsprøve
+          </p>
+        </a>
 
-      <a class="tema" href="UX.html">
-        <h1>Grundlæggende UX <br />Tema 3</h1>
-        <p>
-          Konceptudvikling; Case: Salg af T-shirts på webshop, Forskellige, Desk
-          Research, Interview Research, Survey Research, Sketching: solution
-          sketch, Xd library, Copy, Microcopy, Tagline, Prototype
-        </p>
-      </a>
+        <a class="tema" href="UX.html">
+          <h1>Grundlæggende UX <br />Tema 3</h1>
+          <p>
+            Konceptudvikling; Case: Salg af T-shirts på webshop, Forskellige,
+            Desk Research, Interview Research, Survey Research, Sketching:
+            solution sketch, Xd library, Copy, Microcopy, Tagline, Prototype
+          </p>
+        </a>
 
-      <a class="tema" href="Ani.html">
-        <h1>Grundlæggende Animation <br />Tema 4</h1>
-        <p>
-          Illustrator, Aktivitetsdiagram, moodboard, Skitser af figurdesign,
-          Rentegning, Titelskærm, Assetliste, Designdokumentation UI-elementer,
-          Animation, JavaScript, Audition
-        </p>
-      </a>
+        <a class="tema" href="Ani.html">
+          <h1>Grundlæggende Animation <br />Tema 4</h1>
+          <p>
+            Illustrator, Aktivitetsdiagram, moodboard, Skitser af figurdesign,
+            Rentegning, Titelskærm, Assetliste, Designdokumentation
+            UI-elementer, Animation, JavaScript, Audition
+          </p>
+        </a>
 
-      <div class="tema">
-        <h1>Grundlæggende indhold <br />Tema 5</h1>
-
-        <p>
-          Ophavsretsloven, Markedsføringsloven, Pilotprojekt, Storyboard,
-          Interviewspørgsmål, Premiere pro, website, SCRUM, Redesign,
-          Brugerprofil), BERT test, 5-sek test, tænke-højt test, ekspert test,
-          heuristik test, Layoutdiagram, Wireframe, Processdokumentation.
-        </p>
+        <a class="tema" href="indhold.html">
+          <h1>Grundlæggende indhold <br />Tema 5</h1>
+          <p>
+            Ophavsretsloven, Markedsføringsloven, Pilotprojekt, Storyboard,
+            Interviewspørgsmål, Premiere pro, website, SCRUM, Redesign,
+            Brugerprofil), BERT test, 5-sek test, tænke-højt test, ekspert test,
+            heuristik test, Layoutdiagram, Wireframe, Processdokumentation.
+          </p>
+        </a>
       </div>
     </div>
+
     <footer>
       <div class="footerindhold">
-        <div class="footerbillede">
-          <img src="billeder/logo.svg" alt="logo" />
-        </div>
-
-        <div class="footertekst">
-          <h3>Kontakt</h3>
-          <p>mit navn er grethe din spade</p>
-          <p>massere af pis</p>
-          <p class="email">andreaslittautimmermann@hotmail.dk</p>
-          <h4>27511884</h4>
-        </div>
+        <ul class="medier">
+          <li>
+            <a href="#" class="fa fa-facebook"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-instagram"></a>
+          </li>
+        </ul>
       </div>
+      <p>Af Andreas Littau Timmermann</p>
     </footer>
   </body>
-  -->
-  <script src="script.js"></script>
+
+  <script src="ALLE.js"></script>
 </html>
