@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#e6efa1, #fefffd);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100pxpx;
+}
+
+/* Splashbillede  */
+.splash {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0% 1%;
+}
+
+.hej {
+  grid-column: 3/7;
+  grid-row: 1/4;
+}
+
+.hej img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.portfolio {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.portfolio img {
+  width: 200%;
+  margin-left: 40%;
+}
+
+/* TEMAOVERBLIK KNAP */
+.knap {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  margin-bottom: 10%;
+}
+
+.knap a {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #7a9d97;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #e2e9b0;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.knap a:hover {
+  letter-spacing: 6px;
+}
+
+.knap a:hover {
+  letter-spacing: 6px;
+}
+
+.billede1 img {
+  grid-row: 2;
+  width: 78%;
+  margin-left: 12%;
+}
+
+.billede2 img {
+  width: 100%;
+}
+
+.billede2 {
+  align-content: center;
+  padding: 2%;
+}
+
+/* OM MIG TEKST */
+
+.tekst {
+  padding: 0 10%;
+}
+
+/* OM MIG BILLEDE */
+.billede3 {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+}
+
+.billede3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  grid-column: 2;
+}
+
+/* Section 3  TEMAER*/
+
+#section3 {
+  font-size: 110%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 10%;
+  padding: 0 10%;
+  gap: 5% 5%;
+  margin-bottom: 40%;
+}
+
+.tema {
+  background-color: #7a9d97;
+  text-decoration: none;
+  padding: 5% 5%;
+}
+
+.tema p {
+  color: black;
+}
+
+.tema h1 {
+  color: #e6efa1;
+}
+
+.tema:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* burgermenu  LILLE MENU*/
+
+@media (min-width: 900px) {
+  /* SPLASH */
+  .splash {
+    padding: 0% 5%;
+  }
+
+  /* OM MIG TEKST  */
+  .tekst {
+    padding: 0 20%;
+    font-size: 120%;
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1000px) {
+  /*   SECTION 3 
+ */
+  #section3 {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5% 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*   SLASH */
+  .splash {
+    padding: 0% 20%;
+  }
+
+  /* KNAP */
+  .knap {
+    margin-bottom: 2%;
+  }
+
+  /*   OM MIG */
+  .ommig {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1900px) {
+  /* OM MIG BILLEDE  */
+  .billede3 {
+    width: 70%;
+    margin-top: 0%;
+    margin-right: 20%;
+  }
+}

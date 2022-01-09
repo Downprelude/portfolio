@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#e6efa1, #fefffd);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+/* BURGER MENU NAVIGATIONSBAR  */
+.toggle-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    height: 80px;
+    cursor: pointer;
+  }
+
+  header {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px 40px;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    gap: 10px;
+  }
+
+  #andreas_logo {
+    height: 10%;
+    width: 10%;
+    padding: 0%;
+    display: flex;
+  }
+
+  #logo img {
+    width: 20%;
+  }
+
+  a {
+    display: flex;
+    height: 100%;
+    width: 62%;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-top: 1px solid #000;
+    padding-top: 0.3rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .menu-icons {
+    width: 100%;
+    height: 100%;
+  }
+
+  .icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  .toggle-btn.open .burger,
+  .close {
+    display: none;
+  }
+
+  .toggle-btn.open .close,
+  .burger {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  /*Desktop nav*/
+  header {
+
+    background: transparent;
+    display: grid;
+    grid-template-columns: 0.8fr 5fr;
+    overflow-x: hidden;
+  }
+
+  header nav ul {
+    grid-row: 3;
+  }
+
+  li {
+    display: inline;
+    padding: 5px;
+  }
+
+  a {
+    font-family: "Gilda Display", serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+  }
+
+  #nav_burgermenu {
+    display: none;
+  }
+
+  #nav_desktop {
+    display: grid;
+    place-content: end;
+    margin-bottom: 5%;
+  }
+
+  #andreas_logo img{
+    height: 100%;
+    width: 100%;
+    place-content: left;
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+  }
+
+
+
+/* FOOTER  */
+
+footer {
+  margin-top: 10%;
+  width: 95%;
+  height: 255px;
+  background: linear-gradient(to right, #a6c2a1, #849c96);
+  color: rgb(0, 0, 0);
+  border-top-right-radius: 150px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footerindhold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footerbillede {
+  width: 30%;
+}
+
+.footerbillede img {
+  padding: 10%;
+  opacity: 0.3;
+}
+
+.footertekst {
+  margin-top: 20%;
+}
+
+@media (min-width: 1200px) {
+  /* FOOTER */
+  footer {
+    height: 200px;
+  }
+
+  .footertekst {
+    margin-top: 5%;
+  }
+}
