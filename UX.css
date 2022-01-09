@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* SECTION 1  */
 .ux img {
   width: 100%;
@@ -6,19 +11,20 @@
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr;
-  grid-template-rows: 0.3fr 0.4fr 0.6fr;
-  margin-top: 10%;
+  grid-template-rows: 0.1fr 0.4fr;
+  padding: 0 10%;
 }
 
 .ux {
-  margin-right: 10%;
-  grid-column: 3/7;
+  width: 110%;
+  grid-column: 1/6;
   grid-row: 1/3;
 }
 
 .overodnet {
-  grid-column: 2/5;
-  grid-row: 2/4;
+  margin-top: 5%;
+  grid-column: 1/5;
+  grid-row: 2/3;
   line-height: 120%;
 }
 
@@ -54,7 +60,7 @@
   grid-column: 2;
   white-space: nowrap;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 0.7em;
   background-color: #7a9d97;
   padding: 10px 10px;
   text-decoration: none;
@@ -76,7 +82,7 @@
 /* OPDELER */
 
 .opdeler {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .opdeler img {
@@ -90,13 +96,13 @@
 }
 
 .section3 h1 {
-  margin: 10% 0%;
-  font-size: 220%;
+  margin: 5% 0%;
+  font-size: 200%;
 }
 
 .section3 p {
-  font-size: 1.5rem;
-  line-height: 135%;
+  font-size: 1rem;
+  line-height: 130%;
 }
 
 ƒ/* OPDELER 2 */
@@ -108,71 +114,19 @@
 }
 
 /* STORE KNAPPER - MINDMAP / SURVEY */
-
-.storknap {
+.toknapper {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 5%;
-  padding: 10% 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+  gap: 10%;
+  padding: 7% 8%;
 }
 
-/* mindmap */
-.stor1 {
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  background-image: url(billeder/UX/mindmap.png);
-  background-size: 579px 173px;
+.mindmap {
+  grid-column: 1;
 }
-
-.stor1 a {
+.survey {
   grid-column: 3;
-  grid-row: 3;
-  white-space: nowrap;
-  font-size: 1.5em;
-  background-color: #7a9d97;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: #e2e9b0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.2s;
-  text-align: center;
-}
-
-.stor1 a:hover {
-  letter-spacing: 6px;
-}
-
-/* Survey */
-.stor2 {
-  grid-row: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  background-image: url(billeder/UX/Survey.png);
-
-  background-size: 729px 223px;
-}
-
-.stor2 a {
-  grid-column: 3;
-  grid-row: 3;
-  white-space: nowrap;
-  font-size: 1.5em;
-  background-color: #7a9d97;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: #e2e9b0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.2s;
-  text-align: center;
-}
-
-.stor2 a:hover {
-  letter-spacing: 6px;
 }
 
 /* section4 - POWERPOINT */
@@ -187,8 +141,8 @@
 }
 
 iframe {
-  width: 603px;
-  height: 378px;
+  width: 600px;
+  height: 374px;
   grid-column: 2;
 }
 
@@ -206,17 +160,42 @@ iframe {
   font-size: 1.5rem;
 }
 
-@media (min-width: 900px) {
-  /*  SECTION 1 - UX & OVERORDNET */
+@media (min-width: 700px) {
   .section1 {
-    grid-template-rows: 0.5fr 0.4fr 0.6fr;
+    grid-template-rows: 0.2fr 0.4fr;
   }
 
+  /* PROTOTYPEKNAP */
+  .knap {
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  .knap {
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+  }
+
+  .section3 p {
+    column-count: 2;
+  }
+
+  /* STORE KNAPPER - MINDMAP / SURVEY */
+  .toknapper {
+    padding: 5% 18%;
+  }
+}
+
+@media (min-width: 900px) {
+  /*  SECTION 1 - UX & OVERORDNET */
+
   .overodnet {
-    grid-column: 2/5;
-    grid-row: 2/4;
-    font-size: 115%;
+    grid-column: 1/5;
+    font-size: 100%;
     line-height: 130%;
+  }
+
+  /* PROTOTYPEKNAP */
+  .knap {
+    grid-template-columns: 2fr 1fr 2fr;
   }
 
   /* SECTION 3  */
@@ -237,34 +216,41 @@ iframe {
   iframe {
     width: 800px;
     height: 485px;
+    overflow: hidden;
   }
 }
 
 @media (min-width: 1200px) {
+  .section1 {
+    grid-template-rows: 0.1fr 1fr;
+  }
+
   .overodnet {
     font-size: 130%;
     line-height: 130%;
   }
 
-  .section1 {
-    grid-template-rows: 0.4fr 0.4fr 0.6fr;
-    grid-template-columns: 1fr 1.1fr 0.5fr 1fr 1fr 1fr;
+  .ux {
+    max-width: 80%;
+    grid-column: 3/7;
   }
 
   .overodnet {
-    grid-column: 2/5;
+    margin-top: 10%;
     grid-row: 2/4;
+    font-size: 100%;
   }
 
   /* SECTION 2 - KNAP */
+  /* PROTOTYPEKNAP */
   .knap {
-    grid-template-columns: 2.5fr 1fr 2.5fr;
+    grid-template-columns: 4fr 1fr 4fr;
   }
 
   /* SECTION 3  */
 
   .section3 p {
-    column-count: 2;
+    column-count: 3;
   }
 
   /* STOR KNAP  */
@@ -298,32 +284,5 @@ iframe {
 
   .section5 {
     padding: 10% 30%;
-  }
-}
-
-@media (min-width: 1600px) {
-  .overodnet {
-    margin-top: 10%;
-    font-size: 140%;
-    line-height: 150%;
-  }
-
-  .section1 {
-    grid-template-rows: 0.3fr 0.4fr 0.4fr;
-    grid-template-columns: 1fr 0.5fr 0.8fr 0.4fr 1fr 1fr;
-  }
-
-  .ux {
-    padding: 0 10%;
-  }
-
-  /* section 4  */
-  iframe {
-    width: 1200px;
-    height: px;
-  }
-
-  .section3 p {
-    column-count: 3;
   }
 }
