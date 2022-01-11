@@ -9,7 +9,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100pxpx;
+  scroll-padding-top: 100px;
 }
 
 /* Splashbillede  */
@@ -107,7 +107,7 @@ html {
 
 .section3 {
   display: grid;
-  grid-row: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5%;
   padding: 5%;
   margin-bottom: 30%;

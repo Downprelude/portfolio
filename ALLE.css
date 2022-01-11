@@ -153,7 +153,6 @@ header {
   #andreas_logo img {
     height: 100%;
     width: 100%;
-    place-content: left;
     grid-column: 1;
     grid-row: 1;
     display: grid;

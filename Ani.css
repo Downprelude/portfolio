@@ -90,10 +90,6 @@
   grid-row: 3/5;
 }
 
-.dildo img {
-  border-radius: 2% 2%;
-}
-
 /* opdeler */
 .opdeler img {
   width: 100%;
@@ -294,12 +290,12 @@ footer {
 
   .section1 {
     display: grid;
-    grid-template-rows: 0.02fr 0.5frr;
+    grid-template-rows: 0.02fr 0.5fr;
   }
 
   .overordnet {
     padding: 10% 20%;
-    grid-template-columns: 2/4;
+    grid-column: 2/4;
   }
 
   .overordnet p {
