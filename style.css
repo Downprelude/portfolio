@@ -106,22 +106,22 @@ html {
 /* Section 3  TEMAER*/
 
 .section3 {
-display: grid;
-grid-row: 1fr 1fr 1fr 1fr;
-gap: 5%;
-padding: 5%;
-margin-bottom: 30%;
+  display: grid;
+  grid-row: 1fr 1fr 1fr 1fr;
+  gap: 5%;
+  padding: 5%;
+  margin-bottom: 30%;
 }
 
 .tema {
-text-decoration: none;
-font-size: 80%;
-background-color: #7a9d97;
+  text-decoration: none;
+  font-size: 80%;
+  background-color: #7a9d97;
 }
 
 .tema p {
-color: black;
-padding: 5%;
+  color: black;
+  padding: 5%;
 }
 
 .tema h1 {
@@ -129,7 +129,7 @@ padding: 5%;
   color: #e6efa1;
 }
 
-.tema h1, 
+.tema h1,
 .tema p {
   padding: 3%;
 }
@@ -138,7 +138,7 @@ padding: 5%;
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
-} 
+}
 
 /* burgermenu  LILLE MENU*/
 
@@ -173,14 +173,13 @@ padding: 5%;
     grid-template-columns: 0.1fr 1fr 0.1fr;
   }
 
+  /* TEMAOVERBLIK  */
 
-/* TEMAOVERBLIK  */
-
-.section3 {
- grid-template-columns: 1fr 1fr;
- grid-template-rows: 1fr 1fr;
- margin-bottom: 10%;
-}
+  .section3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 10%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -203,66 +202,57 @@ padding: 5%;
     padding: 0 10%;
     margin-top: 10%;
   }
- 
-
-
-
 }
 
 @media (min-width: 1000px) {
   /*   SECTION 3 */
 
+  @media (min-width: 1200px) {
+    /*   SLASH */
+    .splash {
+      padding: 0% 20%;
+    }
+    .hej {
+      grid-column: 4/7;
+      width: 100%;
+    }
+    .portfolio {
+      margin-left: 0;
+    }
 
-@media (min-width: 1200px) {
-  /*   SLASH */
-  .splash {
-    padding: 0% 20%;
+    /*   OM MIG */
+    .ommig {
+      padding: 0 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .tekst h1 {
+      margin-top: 5%;
+    }
+
+    .billede3 {
+      width: 69%;
+      margin-left: 10%;
+    }
+
+    /* TEMAOVERBLIK */
+    .section3 {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .tema {
+      padding: 5%;
+    }
   }
-  .hej {
-    grid-column: 4/7;
-    width: 100%;
-  }
-  .portfolio {
-    margin-left: 0;
-  }
 
-  /*   OM MIG */
-  .ommig {
-    padding: 0 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .tekst h1 {
-    margin-top: 5%;
-  }
-
-  .billede3 {
-    width: 69%;
-    margin-left: 10%;
-  }
-
-/* TEMAOVERBLIK */
-.section3 {
-
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
- 
-}
-
-.tema {
-  padding: 5%;
-}
-
-
-
-}
-
-@media (min-width: 1900px) {
-  /* OM MIG BILLEDE  */
-  .billede3 {
-    width: 70%;
-    margin-top: 0%;
-    margin-right: 20%;
+  @media (min-width: 1900px) {
+    /* OM MIG BILLEDE  */
+    .billede3 {
+      width: 70%;
+      margin-top: 0%;
+      margin-right: 20%;
+    }
   }
 }

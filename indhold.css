@@ -3,6 +3,10 @@ img {
   object-fit: cover;
 }
 
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
 /* SPLASH */
 
 .section1 {

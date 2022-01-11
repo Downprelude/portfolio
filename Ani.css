@@ -1,9 +1,3 @@
-img {
-  max-width: 100%;
-  min-width: 100%;
-  object-fit: cover;
-}
-
 /* section 1 SPLASH */
 .section1 {
   display: grid;
@@ -16,17 +10,21 @@ img {
 
 .overordnet {
   padding: 10%;
-  font-size: 70%;
 }
 
+.overordnet h1 {
+  background-color: #7a9d97;
+  font-size: 120%;
+  padding: 0 5%;
+  color: #e6efa1;
+}
 .overordnet p {
   grid-row: 2;
   background-color: #7a9d97;
   padding: 5%;
-  margin-top: 20%;
-  line-height: 120%;
+  line-height: 150%;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 150%;
+  font-size: 80%;
 }
 
 /* section 2 - KNAP */
@@ -44,14 +42,15 @@ img {
 .knap a {
   white-space: nowrap;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 0.7em;
   background-color: #7a9d97;
-  padding: 10px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   color: #e2e9b0;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s;
+  margin-bottom: 50%;
 }
 
 .knap a:hover {
@@ -64,15 +63,15 @@ img {
 
 /* section 3 - BILLEDER */
 .section3 {
+  margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1f 1fr 1fr 1fr;
-  padding: 5%;
-  margin-top: 10%;
+  padding: 0 7%;
+  gap: 5%;
 }
 
-.dildo img {
-  padding: 10%;
+.section3 img {
+  width: 100%;
 }
 
 .section3 img:hover {
@@ -96,8 +95,9 @@ img {
 }
 
 /* opdeler */
-.opdeler {
-  padding: 5% 0;
+.opdeler img {
+  width: 100%;
+  margin-top: 10%;
 }
 
 /* section 4 - PROCESSEN BAG SPILLET   */
@@ -110,59 +110,64 @@ img {
 }
 
 .section4 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-/* section 5  - STATEMACHINE & ASSETLISTE*/
+/* section 5  - STATEMACHINE */
 
-.statemachine {
-  padding: 0 5%;
-}
-
-.section5 h2 {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-
-.assetliste {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 5% 0;
-}
-
-.assetliste img {
-  padding: 0 35%;
-}
-
-.assetliste h2 {
-  margin-top: 10%;
+.diagrammer {
   padding: 5%;
 }
 
-.section5 img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(10px 2px 2px rgba(43, 73, 28, 0.432));
-  transition: 0.5s;
+.diagrammer img {
+  padding: 5%;
+}
+.statemachine img {
+  width: 100%;
 }
 
-.statemachine img:hover {
-  transform: none;
-  filter: none;
+.aktivitet img {
+  width: 100%;
+}
+
+.diagrammer h2 {
+  font-size: 110%;
+}
+/* ASSETLISTE  */
+.assetliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.assetliste img {
+  width: 20%;
+  margin: auto;
+}
+
+.assetliste img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 2px 2px rgba(43, 73, 28, 0.432));
+  transition: 0.2s;
+}
+
+.sectionasset {
+  padding: 0 5%;
 }
 
 /* section 6 - REFLEKSION */
 .section6 {
-  padding: 0% 20%;
+  padding: 0% 10%;
   margin-bottom: 10%;
 }
 
 .section6 h1 {
   margin-bottom: 5%;
   margin-top: 15%;
+  font-size: 130%;
 }
 
 .section6 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 footer {
@@ -194,33 +199,13 @@ footer {
   margin-top: 20%;
 }
 
-@media (min-width: 900px) {
-  /* SPLASH */
-
-  .overordnet p {
-    font-size: 180%;
-  }
-
-  .section1 {
-    display: grid;
-    grid-template-rows: 0.02fr 1fr 0.1fr;
-  }
-
-  .animation {
-    grid-row: 1/5;
-  }
-
-  .overordnet {
-    grid-row: 2;
-  }
-
-  /* billeder */
+@media (min-width: 700px) {
+  /* section 3 - BILLEDER */
   .section3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1f 1fr;
-    padding: 0 10%;
-    margin-top: 10%;
+    grid-template-rows: 1fr 1fr;
+    gap: 5%;
   }
 
   .dildo {
@@ -228,19 +213,75 @@ footer {
     grid-row: 1/3;
   }
 
-  /* section 5  - STATEMACHINE & ASSETLISTE*/
+  .dildo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section3 img {
+    width: 100%;
+  }
+
+  /* opdeler */
+  .opdeler img {
+    margin-top: 5%;
+  }
+
+  /* ASSETLISTE  */
   .assetliste {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 10% 0;
+  }
+}
+
+@media (min-width: 900px) {
+  /* SECTION 1 - SPLASH */
+  .overordnet p {
+    font-size: 100%;
   }
 
-  .statemachine {
+  .section1 {
+    padding: 0 5%;
+  }
+
+  .animation {
+    grid-row: 1/5;
+    margin-left: 10%;
+  }
+
+  .overordnet {
+    grid-row: 2;
+  }
+
+  /* KNAP - TIL SPILLET  */
+  .knap a {
+    font-size: 0.8em;
+  }
+
+  /* SECTION 3 - BILLEDER  */
+
+  .section3 {
     padding: 0 10%;
+    margin-bottom: 10%;
   }
 
-  .section4 p {
-    column-count: 2;
+  .section3 img {
+    width: 100%;
+  }
+
+  /* opdeler */
+  .opdeler img {
+    margin-top: 0%;
+  }
+
+  /* section 5  - STATEMACHINE */
+
+  .diagrammer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diagrammer img {
+    margin-top: 2%;
   }
 }
 
@@ -253,19 +294,29 @@ footer {
 
   .section1 {
     display: grid;
-    grid-template-rows: 0.02fr 0.5fr 0.4fr;
+    grid-template-rows: 0.02fr 0.5frr;
   }
 
   .overordnet {
     padding: 10% 20%;
+    grid-template-columns: 2/4;
   }
 
   .overordnet p {
-    font-size: 200%;
+    font-size: 100%;
   }
 
   .animation {
-    padding: 28%;
+    margin-left: 25%;
+  }
+
+  /* KNAP - TIL SPILLET  */
+  .knap a {
+    font-size: 1em;
+  }
+
+  .sectionasset {
+    padding: 0 10%;
   }
 
   /*   SECTION 4 */
@@ -273,39 +324,10 @@ footer {
     column-count: 3;
   }
 
-  /* section 5  - STATEMACHINE & ASSETLISTE*/
-
-  .section5 {
-    display: flex;
-    padding: 5% 5%;
-    gap: 5%;
-  }
-
-  .statemachine {
-    padding: 0 0;
-  }
-
-  .assetliste {
-    grid-column: 2/4;
-    margin-top: 21%;
-    padding: 0% 0;
-  }
-
-  .assetliste img {
-    padding: 0 24%;
-  }
+  /* SECTION 6 */
 
   .section6 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    padding: 5% 10%;
-  }
-
-  .section6 p {
-    grid-row: 2;
-    grid-column: 2;
-    padding: 0 5%;
+    padding: 0% 30%;
   }
 
   footer {

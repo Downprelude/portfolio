@@ -1,9 +1,3 @@
-img {
-  max-width: 100%;
-  min-width: 100%;
-  object-fit: cover;
-}
-
 video {
   aspect-ratio: 16/9;
   width: 100%;
@@ -18,21 +12,25 @@ video {
 }
 
 /* Tekst i splash  */
+.section1 {
+  padding: 0 5%;
+}
 .introweb {
   margin-top: 10%;
   margin-bottom: 15%;
   font-family: "M PLUS Rounded 1c", sans-serif;
   background-color: #7a9d97;
-  padding: 5%;
-  line-height: 180%;
+  padding: 0 5%;
+line-height: 150%;
 }
 
 .introweb p {
-  font-size: 150%;
+  font-size: 100%;
 }
 
 .introweb h1 {
-  margin-bottom: 5%;
+  font-size: 120%;
+  margin-bottom: 1%;
   color: #e6efa1;
 }
 
@@ -40,46 +38,64 @@ video {
   padding: 3%;
 }
 
-.section1 {
-  margin: 5%;
-}
-
 /* section 2  */
 .indhold {
   padding: 0 10%;
 }
 
-.opdeler {
+.opdeler img {
   margin-top: 2%;
+  width: 100%;
 }
 
-/* Processen  */
-
-.brodtekst {
-  font-size: 150%;
-  margin-top: 10%;
-  margin-bottom: 15%;
-}
-
-.brodtekst p {
+/* SECTION 2 PROCESSEN  */
+.section2 {
   line-height: 120%;
+  padding: 0 5%;
 }
 
-.brodtekst h1 {
+.section2 p,
+.seection2 h1 {
+  margin-bottom: 10%;
+  line-height: 150%;
+}
+
+.section2 h1 {
+  font-size: 115%;
   line-height: 120%;
   margin-bottom: 5%;
-  margin-top: 5%;
 }
 
-.process {
-  padding: 0 5%;
+.powerpoint {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+}
+
+iframe {
+  grid-column: 2;
+  width: 450px;
+  height: 311px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* COLLAGE  */
+.collage {
+  padding: 5%;
+  gap: 2%;
+}
+
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .knap-grid {
   margin-top: 10%;
   margin-bottom: 10%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
 }
 
 .knap2 {
@@ -89,7 +105,7 @@ video {
 .knap2 a {
   white-space: nowrap;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 0.9em;
   background-color: #7a9d97;
   padding: 10px 10px;
   text-decoration: none;
@@ -98,7 +114,6 @@ video {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.2s;
-  /*   filter: drop-shadow(2px 2px 2px rgb(95, 95, 95)); */
 }
 
 .knap2 a:hover {
@@ -114,52 +129,128 @@ video {
 .brodtekst2 {
   font-size: 150%;
   margin-top: 10%;
+  line-height: 110%;
 }
 
 .brodtekst2 p {
-  line-height: 120%;
+  font-size: 70%;
 }
 
 .brodtekst2 h1 {
-  line-height: 120%;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  font-size: 100%;
+  padding: 5% 0%;
 }
 
-.process2 {
+.section3 {
   padding: 0 5%;
+}
+
+@media (min-width: 700px) {
+  .section1 {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .web {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 40%;
+  }
+
+  .web img {
+    width: 100%;
+  }
+
+  .introweb {
+    grid-row: 2;
+    grid-column: 1/6;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 10%;
+  }
+
+  .stylemood {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*   SECTION 2 - PROCESSEN BAG STUDIESTARTSPRØVEN */
+  iframe {
+    width: 570px;
+    height: 356px;
+  }
+
+  /*   COLLAGE  */
+  .collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 @media (min-width: 900px) {
   /* SPLASH */
 
-  /* SECTION 2 */
-  .indhold {
+  .section1 {
+    padding: 1% 10%;
+  }
+
+  .web {
+    grid-column: 3/5;
+  }
+
+  .introweb {
+    padding: 2%;
+    grid-column: 1/4;
+  }
+
+/* KNAP */
+.knap-grid {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+
+  .powerpoint {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+  }
+
+  .collage {
+    padding: 10%;
+    gap: 2%;
+  }
+
+  .section3 {
+    padding: 0 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*   SECTION 2 - PROCESSEN BAG STUDIESTARTSPRØVEN */
+  .section2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 0 10%;
+    gap: 10%;
   }
 
-  .indhold img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .powerpoint {
+    padding: 8% 0%;
   }
 
-  video {
-    aspect-ratio: 16/9;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  /*   COLLAGE  */
+  .collage {
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
-  .process {
-    padding: 0 10%;
-  }
-
-  .process2 {
-    padding: 0 10%;
+  .section3 {
+    padding: 0 30%;
   }
 }
 
@@ -208,15 +299,11 @@ video {
     margin-left: 0%;
   }
 
-  .brodtekst {
-    padding: 0 10%;
-  }
-
   .process {
     padding: 0 5%;
   }
 
-  .process2 {
+  .section3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

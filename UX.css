@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 /* SECTION 1  */
@@ -25,24 +26,25 @@ body {
   margin-top: 5%;
   grid-column: 1/5;
   grid-row: 2/3;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .overodnet p,
 .overodnet h1 {
   background-color: #7a9d97;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .overodnet h1 {
   font-size: 120%;
-  padding: 1%;
   color: #e6efa1;
+  padding: 3%;
 }
 
 .overodnet p {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 100%;
-  padding: 2% 5%;
+  padding: 3%;
 }
 
 /* SECTION 2 - KNAP */
@@ -131,25 +133,30 @@ body {
 
 /* section4 - POWERPOINT */
 
-.section4 h2 {
-  padding: 5%;
+.refleksion {
+  padding: 10% 5%;
+}
+
+.refleksion p {
+  line-height: 130%;
 }
 
 .powerpoint {
+  margin-top: 5%;
   display: grid;
   grid-column: 0.1fr 1fr 0.1fr;
 }
 
 iframe {
-  width: 600px;
-  height: 374px;
+  width: 479px;
+  height: 306px;
   grid-column: 2;
 }
 
 /* SECTION 5 - REFLEKSION */
 
 .section5 {
-  padding: 10% 0%;
+  padding: 0% 10%;
 }
 
 .section5 h2 {
@@ -157,12 +164,17 @@ iframe {
 }
 
 .section5 p {
-  font-size: 1.5rem;
+  font-size: 100%;
 }
 
 @media (min-width: 700px) {
   .section1 {
     grid-template-rows: 0.2fr 0.4fr;
+  }
+
+  /* POWERPOINT  */
+  iframe {
+    grid-column: 2;
   }
 
   /* PROTOTYPEKNAP */
@@ -190,7 +202,6 @@ iframe {
   .overodnet {
     grid-column: 1/5;
     font-size: 100%;
-    line-height: 130%;
   }
 
   /* PROTOTYPEKNAP */
@@ -213,10 +224,30 @@ iframe {
   }
 
   /* section 4  */
+
+  .section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+  }
+
   iframe {
-    width: 800px;
-    height: 485px;
+    width: 516px;
+    height: 326px;
     overflow: hidden;
+  }
+
+  .powerpoint {
+    display: grid;
+    grid-column: 0fr;
+  }
+
+  .powerpoint {
+    grid-column: 1;
+  }
+
+  .refleksion {
+    grid-column: 2;
   }
 }
 
@@ -278,8 +309,8 @@ iframe {
 
   /* section 4  */
   iframe {
-    width: 980px;
-    height: 585px;
+    width: 516px;
+    height: 326px;
   }
 
   .section5 {
