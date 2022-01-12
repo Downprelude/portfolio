@@ -42,6 +42,10 @@ body {
   font-size: 130%;
 }
 
+.opdeler img {
+  width: 100%;
+}
+
 /* SECTION 3 - PROCESSEN BAG PILOTPROJEKTET  */
 .section3 {
   padding: 5%;

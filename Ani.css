@@ -166,35 +166,6 @@
   font-size: 1rem;
 }
 
-footer {
-  margin-top: 10%;
-  width: 95%;
-  height: 255px;
-  background: linear-gradient(to right, #a6c2a1, #849c96);
-  color: rgb(0, 0, 0);
-  border-top-right-radius: 150px;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.footerindhold {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.footerbillede {
-  width: 30%;
-}
-
-.footerbillede img {
-  padding: 10%;
-  opacity: 0.3;
-}
-
-.footertekst {
-  margin-top: 20%;
-}
-
 @media (min-width: 700px) {
   /* section 3 - BILLEDER */
   .section3 {
